@@ -1,0 +1,72 @@
+{
+  "bar.customModules.updates.pollingInterval": 1440000,
+  "theme.font.size": "1rem",
+  "menus.clock.time.military": true,
+  "menus.clock.weather.location": "Los Angeles",
+  "menus.clock.weather.unit": "metric",
+  "theme.font.name": "JetBrainsMono Nerd Font Propo",
+  "theme.font.style": "normal",
+  "theme.font.label": "JetBrainsMono Nerd Font Propo",
+  "wallpaper.pywal": true,
+  "wallpaper.image": "/home/jan/Pictures/wallhaven-rrljjq.jpg",
+  "terminal": "Kitty",
+  "theme.bar.menus.monochrome": false,
+  "bar.layouts": {
+    "0": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "network",
+        "bluetooth",
+        "systray",
+        "clock",
+        "notifications"
+      ]
+    },
+    "1": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    },
+    "2": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    }
+  },
+  "menus.dashboard.stats.enable_gpu": true,
+  "menus.dashboard.shortcuts.left.shortcut1.command": "firefox",
+  "menus.dashboard.shortcuts.left.shortcut1.tooltip": "firefox",
+  "menus.dashboard.shortcuts.left.shortcut1.icon": "",
+  "menus.dashboard.directories.left.directory3.label": "󰚝 OneDrive",
+  "menus.dashboard.directories.left.directory3.command": "bash -c \"xdg-open $HOME/OneDrive/\"",
+  "scalingPriority": "hyprland",
+  "menus.dashboard.shortcuts.left.shortcut4.command": "wofi --show drun"
+}
