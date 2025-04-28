@@ -2,7 +2,7 @@
   "bar.customModules.updates.pollingInterval": 1440000,
   "theme.font.size": "1rem",
   "menus.clock.time.military": true,
-  "menus.clock.weather.location": "Los Angeles",
+  "menus.clock.weather.location": "Bergen",
   "menus.clock.weather.unit": "metric",
   "theme.font.name": "JetBrainsMono Nerd Font Propo",
   "theme.font.style": "normal",
@@ -431,5 +431,9 @@
   "theme.bar.buttons.modules.cava.background": "#090909",
   "theme.bar.buttons.modules.cava.icon_background": "#090909",
   "theme.bar.buttons.modules.cava.icon": "#FFFFFF",
-  "theme.bar.buttons.modules.cava.border": "#FFFFFF"
+  "theme.bar.buttons.modules.cava.border": "#FFFFFF",
+  "theme.bar.buttons.clock.enableBorder": false,
+  "bar.clock.showIcon": true,
+  "bar.clock.showTime": true,
+  "bar.clock.format": "%a %b %d  %H:%M:%S"
 }
