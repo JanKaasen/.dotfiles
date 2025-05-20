@@ -134,8 +134,24 @@ export PATH="$HOME/.cabal/bin:$PATH"
 export EDITOR='nvim'
 export XDG_CURRENT_DESKTOP=Hyprland
 export XDG_SESSION_DESKTOP=Hyprland
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+export PATH=$JAVA_HOME/bin:$PATH
 # export PATH="$(brew --prefix)/opt/python@3/libexec/bin:$PATH"
 [ -f "/home/jan/.ghcup/env" ] && . "/home/jan/.ghcup/env" # ghcup-env
+
+mvnrun() {
+  if [ -f "pom.xml" ]; then
+    if [ "$#" -eq 0 ]; then
+      echo "Usage: mvnrun <mainClass>"
+      echo "Example: mvnrun no.uib.inf101.Main"
+      return 1
+    fi
+    mvn compile exec:java -Dexec.mainClass="$1"
+  else
+    echo "Error: No pom.xml found in current directory"
+    return 1
+  fi
+}
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
