@@ -15,7 +15,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -143,7 +143,6 @@ mvnrun() {
   if [ -f "pom.xml" ]; then
     if [ "$#" -eq 0 ]; then
       echo "Usage: mvnrun <mainClass>"
-      echo "Example: mvnrun no.uib.inf101.Main"
       return 1
     fi
     mvn compile exec:java -Dexec.mainClass="$1"
@@ -152,6 +151,3 @@ mvnrun() {
     return 1
   fi
 }
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
