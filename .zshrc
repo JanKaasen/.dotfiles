@@ -128,6 +128,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # eval "$(/opt/homebrew/bin/brew shellenv)"
+
+export PATH="$HOME/.local/scripts:$PATH"
 export PATH=/home/jan/.cargo/bin:$PATH
 export PATH=/home/jan/.local/bin:$PATH
 export PATH="$HOME/.cabal/bin:$PATH"
@@ -137,7 +139,6 @@ export XDG_SESSION_DESKTOP=Hyprland
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 export PATH=$JAVA_HOME/bin:$PATH
 # export PATH="$(brew --prefix)/opt/python@3/libexec/bin:$PATH"
-[ -f "/home/jan/.ghcup/env" ] && . "/home/jan/.ghcup/env" # ghcup-env
 
 mvnrun() {
   if [ -f "pom.xml" ]; then
@@ -151,3 +152,7 @@ mvnrun() {
     return 1
   fi
 }
+
+bindkey -s ^f "tmux-sessionizer\n"
+
+[ -f "/home/jan/.ghcup/env" ] && . "/home/jan/.ghcup/env" # ghcup-env
