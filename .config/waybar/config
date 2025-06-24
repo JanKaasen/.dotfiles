@@ -7,16 +7,8 @@
 
   "modules-right": [
     "pulseaudio",
-    "custom/uptime",
-    "backlight",
-    "battery",
     "network",
-    "cpu",
-    "memory",
-    "custom/docker",
     "tray",
-    "custom/lock",
-    "custom/power"
   ],
 
   "hyprland/workspaces": {
@@ -43,7 +35,7 @@
   },
 
   "clock": {
-    "timezone": "America/Fortaleza",
+    "timezone": "Europe/Oslo",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "format": "{:%d/%m/%Y - %H:%M:%S}",
     "interval": 1
@@ -82,26 +74,4 @@
     },
     "on-click": "pavucontrol"
   },
-
-  "custom/power": {
-    "tooltip": false,
-    "on-click": "wlogout &",
-    "format": "⏻"
-  },
-
-  "custom/docker": {
-    "format": "{}",
-    "return-type": "json",
-    "interval": 10,
-    "exec": "$(pwd)/scripts/docker-stats/docker-stats",
-    "tooltip": true
-  },
-
-  "custom/weather": {
-    "format": "{}",
-    "tooltip": true,
-    "interval": 1800,
-    "exec": "$(pwd)/scripts/weather-stats/weather-stats",
-    "return-type": "json"
-  }
 }
