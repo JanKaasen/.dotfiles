@@ -44,7 +44,7 @@ mvnrun() {
 
 bindkey -s ^f "tmux-sessionizer\n"
 
-[ -f "/home/jan/.ghcup/env" ] && . "/home/jan/.ghcup/env" # ghcup-env
 
+[ -f "/home/jan/.ghcup/env" ] && . "/home/jan/.ghcup/env" # ghcup-env
 
 eval "$(starship init zsh)"
