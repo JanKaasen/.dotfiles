@@ -11,6 +11,8 @@ zstyle :compinstall filename '/home/jan/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+#
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
