@@ -27,7 +27,7 @@ export PATH="$HOME/.cabal/bin:$PATH"
 export EDITOR='nvim'
 export XDG_CURRENT_DESKTOP=Hyprland
 export XDG_SESSION_DESKTOP=Hyprland
-export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
 export PATH=$JAVA_HOME/bin:$PATH
 # export PATH="$(brew --prefix)/opt/python@3/libexec/bin:$PATH"
 
