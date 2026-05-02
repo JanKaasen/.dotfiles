@@ -27,7 +27,7 @@ export PATH="$HOME/.cabal/bin:$PATH"
 export EDITOR='nvim'
 export XDG_CURRENT_DESKTOP=Hyprland
 export XDG_SESSION_DESKTOP=Hyprland
-export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
+export JAVA_HOME=/usr/lib/jvm/default
 export PATH=$JAVA_HOME/bin:$PATH
 # export PATH="$(brew --prefix)/opt/python@3/libexec/bin:$PATH"
 
@@ -47,6 +47,7 @@ mvnrun() {
 bindkey -s ^f "tmux-sessionizer\n"
 
 
-[ -f "/home/jan/.ghcup/env" ] && . "/home/jan/.ghcup/env" # ghcup-env
 
 eval "$(starship init zsh)"
+
+[ -f "/home/jan/.ghcup/env" ] && . "/home/jan/.ghcup/env" # ghcup-env
