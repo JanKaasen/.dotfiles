@@ -31,7 +31,6 @@ hl.monitor({
 -- hl.exec_cmd() is async, no need for & at the end
 hl.on("hyprland.start", function()
     hl.exec_cmd("waybar")
-    hl.exec_cmd('rclone --vfs-cache-mode writes mount "OneDrive": ~/OneDrive')
     hl.exec_cmd("hyprctl setcursor Adwaita 20")
     hl.exec_cmd("hyprpaper")
     hl.exec_cmd("hyprlauncher -d")  -- start daemon so it opens instantly
@@ -61,8 +60,8 @@ hl.config({
         gaps_out      = 20,
         border_size   = 2,
         col = {
-            active_border   = { colors = {"rgba(33ccffee)", "rgba(00ff99ee)"}, angle = 45 },
-            inactive_border = "rgba(595959aa)",
+            active_border   = { colors = {"rgba(ffdd33ee)", "rgba(73c936ee)"}, angle = 45 },
+            inactive_border = "rgba(453d41aa)",
         },
         resize_on_border = false,
         allow_tearing    = false,

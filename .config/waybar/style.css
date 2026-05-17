@@ -1,3 +1,22 @@
+/* Waybar style.css — Gruber Darker theme
+ *
+ * Palette reference (https://github.com/rexim/gruber-darker-theme):
+ *   bg-1     #101010   darkest bg
+ *   bg       #181818   main bg
+ *   bg+1     #282828   hover bg
+ *   bg+2     #453d41   selection
+ *   fg       #e4e4ef   main text
+ *   fg+1     #f4f4ff   bright text
+ *   yellow   #ffdd33   signature accent
+ *   green    #73c936   strings / success
+ *   red      #f43841   errors / warnings
+ *   brown    #cc8c3c   warm accent
+ *   niagara  #96a6c8   blue
+ *   wisteria #9e95c7   purple
+ *   quartz   #95a99f   cyan/teal
+ *   gray     #52494e   muted / disabled
+ */
+
 * {
   font-family: CommitMono Nerd Font;
   font-size: 20px;
@@ -9,25 +28,25 @@
 
 #waybar {
   background: transparent;
-  color: #c6d0f5;
+  color: #e4e4ef;       /* fg */
   margin: 2px 2px;
 }
 
 #workspaces {
   border-radius: 5px;
   margin: 5px;
-  background: #101010;
+  background: #181818;  /* bg */
   margin-left: 2px;
 }
 
 #workspaces button {
-  color: #babbf1;
+  color: #96a6c8;       /* niagara — inactive workspace */
   border-radius: 5px;
   padding: 0.4rem;
 }
 
 #workspaces button.active {
-  color: #99d1db;
+  color: #ffdd33;       /* yellow — active workspace */
   border-radius: 5px;
 }
 
@@ -36,7 +55,7 @@ button {
 }
 
 #workspaces button:hover {
-  background: #1e1e1e;
+  background: #282828;  /* bg+1 */
   border: 0px solid transparent;
 }
 
@@ -54,36 +73,36 @@ button {
 #custom-weather,
 #custom-uptime,
 #custom-docker {
-  background-color: #101010;
+  background-color: #181818;  /* bg */
   padding: 0.5rem 1rem;
   margin: 5px 0;
 }
 
 #clock {
-  color: #8caaee;
+  color: #96a6c8;       /* niagara */
   border-radius: 5px;
 }
 
 #custom-weather {
-  color: #8caaee;
+  color: #96a6c8;       /* niagara */
   margin-left: 0.5rem;
   border-radius: 5px;
 }
 
 #battery {
-  color: #a6d189;
+  color: #73c936;       /* green */
 }
 
 #battery.charging {
-  color: #a6d189;
+  color: #73c936;       /* green */
 }
 
 #battery.warning:not(.charging) {
-  color: #e78284;
+  color: #f43841;       /* red */
 }
 
 #backlight {
-  color: #e5c890;
+  color: #ffdd33;       /* yellow */
 }
 
 #backlight,
@@ -92,65 +111,70 @@ button {
 }
 
 #pulseaudio {
-  color: #ea999c;
+  color: #cc8c3c;       /* brown */
   border-radius: 5px 0px 0px 5px;
 }
 
+#network {
+  color: #95a99f;       /* quartz */
+}
+
 #custom-docker {
-  color: #85c1dc;
+  color: #95a99f;       /* quartz */
 }
 
 #custom-music {
-  color: #ca9ee6;
+  color: #9e95c7;       /* wisteria */
   border-radius: 5px;
 }
 
 #custom-lock {
-  color: #babbf1;
+  color: #e4e4ef;       /* fg */
 }
 
 #custom-power {
   margin-right: 1rem;
   border-radius: 0px 5px 5px 0px;
-  color: #e78284;
+  color: #f43841;       /* red */
 }
 
 #custom-docker.docker {
-  color: #85c1dc;
+  color: #95a99f;       /* quartz */
 }
 
 #custom-docker.docker-none {
-  color: #737994;
+  color: #52494e;       /* muted gray */
 }
 
 #custom-docker.docker-error {
-  color: #e78284;
+  color: #f43841;       /* red */
 }
 
+/* Weather states */
 #custom-weather.clear {
-  color: #e5c890; /* Sunny yellow */
+  color: #ffdd33;       /* yellow — sunny */
 }
 
 #custom-weather.cloud {
-  color: #99d1db; /* Light blue */
+  color: #95a99f;       /* quartz — cloudy */
 }
 
 #custom-weather.rain {
-  color: #8caaee; /* Blue */
+  color: #96a6c8;       /* niagara — rain */
 }
 
 #custom-weather.snow {
-  color: #c6d0f5; /* White-ish */
+  color: #e4e4ef;       /* fg — snow */
 }
 
 #custom-weather.thunder {
-  color: #ca9ee6; /* Purple */
+  color: #9e95c7;       /* wisteria — thunder */
 }
 
 #custom-weather.fog {
-  color: #b0b4bc; /* Gray */
+  color: #52494e;       /* muted gray — fog */
 }
 
 #custom-weather.error {
-  color: #e78284; /* Red */
+  color: #f43841;       /* red */
 }
