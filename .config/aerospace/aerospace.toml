@@ -30,7 +30,7 @@ outer.right =      0
 
 # Applications (mirrors the hyprland.lua bindings: terminal/browser/file-manager/launcher)
 alt-q = 'exec-and-forget open -na Ghostty'
-alt-w = 'exec-and-forget open -na "Zen Browser"'
+alt-w = 'exec-and-forget open -na Orion'
 alt-e = 'exec-and-forget open -a Finder'
 alt-space = 'exec-and-forget open -a Raycast'
 
