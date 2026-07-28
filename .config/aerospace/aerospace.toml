@@ -1,6 +1,7 @@
 # aerospace.toml
 # AeroSpace config - macOS tiling window manager, replaces Hyprland's role.
 # Docs: https://nikitabobko.github.io/AeroSpace/guide
+config-version = 2
 
 start-at-login = true
 
@@ -30,7 +31,7 @@ outer.right =      0
 
 # Applications (mirrors the hyprland.lua bindings: terminal/browser/file-manager/launcher)
 alt-q = 'exec-and-forget open -na Ghostty'
-alt-w = 'exec-and-forget open -na Orion'
+alt-w = 'exec-and-forget open -na Zen'
 alt-e = 'exec-and-forget open -a Finder'
 alt-space = 'exec-and-forget open -a Raycast'
 
